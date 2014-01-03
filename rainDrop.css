@@ -1,0 +1,74 @@
+@keyframes rdDrop {
+	0%   {
+		top: 0;
+		opacity: 0;
+		transform:scale(1);
+		filter:blur(0px);
+	}
+
+	20%  {
+		opacity: 1;
+		top: 10px;	
+		transform:scale(1);
+		filter:blur(0px);
+	}
+
+	50% {
+		top: 15px;
+		transform:scale(1.5);
+		filter:blur(2px);
+		opacity: 0;
+	}
+
+	100% {
+		top: 15px;
+		transform:scale(2);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes rdDrop {
+	0%   {
+		top: 0;
+		opacity: 0;
+		-webkit-transform:scale(1);
+		-webkit-filter:blur(0px);
+	}
+
+	20%  {
+		opacity: 1;
+		top: 10px;	
+		-webkit-transform:scale(1);
+		-webkit-filter:blur(0px);
+	}
+
+	50% {
+		top: 15px;
+		-webkit-transform:scale(1.5);
+		-webkit-filter:blur(2px);
+		opacity: 0;
+	}
+
+	100% {
+		top: 15px;
+		-webkit-transform:scale(2);
+		opacity: 0;
+	}
+}
+
+.rdHolder {
+	position: relative;
+	padding-bottom: 20px; 
+}
+
+div.rdDrop {
+	position: relative;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	background-color: #88f;
+	margin: 5px;
+	opacity: 0;
+	top: 0;
+}
