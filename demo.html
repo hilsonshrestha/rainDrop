@@ -6,13 +6,16 @@
 	<style type="text/css">
 		html {
 			font-family: arial, sans-serif;
-			font-size: 13px;		
+			font-size: 13px;
+		}
+		body {
+			padding: 100px;
 		}
 	</style>
 </head>
 <body>
-	<h1>rainDrop</h1>
-	<h3>Simple loading animation using javascript and CSS3.</h3>
+	<h1><span style="color:#88f;">rain</span>Drop</h1>
+	<h3>Simple loading animation using <i>javascript</i> and <i>CSS3</i>.</h3>
 	<div id="rainDropContainer"></div>
 </body>
 
@@ -20,5 +23,7 @@
 
 <script type="text/javascript">
 	var e = document.getElementById('rainDropContainer');
+	var r = rainDrop();
+	e.appendChild(r);
 </script>
 </html>
