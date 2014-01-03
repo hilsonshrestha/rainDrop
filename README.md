@@ -1,4 +1,4 @@
 rainDrop
 ========
 
-javascript, css3 loading animation
+*Simple loading animation using javascript and CSS3.*
