@@ -1,4 +1,4 @@
-@keyframes rdDrop {
+@keyframes rdDrop-normal {
 	0%   {
 		top: 0;
 		opacity: 0;
@@ -27,7 +27,7 @@
 	}
 }
 
-@-webkit-keyframes rdDrop {
+@-webkit-keyframes rdDrop-normal {
 	0%   {
 		top: 0;
 		opacity: 0;
@@ -55,6 +55,85 @@
 		opacity: 0;
 	}
 }
+
+
+@keyframes rdDrop-wave {
+	0%   {
+		top: 0;
+		opacity: 0;
+		transform: scale(1);
+		filter: blur(0px);
+		left: 0;
+	}
+
+	20%  {
+		opacity: 1;
+		top: 10px;	
+		transform: scale(1);
+		filter: blur(0px);
+		left: 20px;
+	}
+
+	50% {
+		top: 15px;
+		transform: scale(1.5);
+		filter: blur(2px);
+		opacity: 0;
+		left: 10px;
+	}
+
+	100% {
+		top: 15px;
+		transform: scale(2);
+		left: 10px;
+		opacity: 0;
+	}
+}
+
+
+
+@-webkit-keyframes rdDrop-wave {
+	0%   {
+		top: 0;
+		opacity: 0;
+		-webkit-transform: scale(1);
+		-webkit-filter: blur(0px);
+		left: 0;
+	}
+
+	20%  {
+		opacity: 1;
+		top: 10px;	
+		-webkit-transform: scale(1);
+		-webkit-filter: blur(0px);
+		left: 20px;
+	}
+
+	50% {
+		top: 15px;
+		-webkit-transform: scale(1.5);
+		-webkit-filter: blur(2px);
+		opacity: 0;
+		left: 10px;
+	}
+
+	100% {
+		top: 15px;
+		-webkit-transform: scale(2);
+		left: 10px;
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 .rdHolder {
 	position: relative;
